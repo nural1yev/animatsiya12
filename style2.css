@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  background-color: #efefef;
+  color: #f0f0f0;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 1000px;
+}
+
+header h1 {
+  font-size: 50px;
+  position: absolute;
+  top: 100px;
+  left: 800px;
+  color: black;
+}
+
+header .first {
+  position: absolute;
+  top: 200px;
+  left: 910px;
+  height: 5px;
+  width: 100px;
+  background-color: #5300ac;
+  border-radius: 50px;
+  animation: first 2s infinite alternate;
+}
+
+header .second {
+  position: absolute;
+  top: 200px;
+  left: 860px;
+  height: 5px;
+  width: 30px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, yellow, orange);
+}
+
+header .third {
+  position: absolute;
+  top: 200px;
+  left: 1030px;
+  height: 5px;
+  width: 30px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, yellow, orange);
+  animation: third 2s infinite alternate;
+}
+
+@keyframes first {
+  0% {
+    width: 100px;
+    left: 910px;
+  }
+
+  100% {
+    width: 100px;
+    left: 900px;
+    padding: 0px 65px;
+  }
+}
+
+@keyframes third {
+  0% {
+    width: 30px;
+    left: 1030px;
+  }
+
+  100% {
+    width: 30px;
+    left: 1040px;
+  }
+}
+
+header span {
+  position: absolute;
+  text-align: start;
+  top: 350px;
+  left: 200px;
+  font-size: 25px;
+  color: grey;
+  width: 700px;
+}
+
+header .box1 {
+  position: relative;
+  top: 500px;
+  left: 200px;
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #80808055;
+  color: black;
+  font-size: 30px;
+}
+
+header .box1 div {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  font-size: 30px;
+}
+
+header .box1 p {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  left: 20px;
+  top: 20px;
+  border-radius: 10px;
+}
+
+header .box2 {
+  position: relative;
+  top: 400px;
+  left: 600px;
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #80808055;
+  color: black;
+  font-size: 30px;
+}
+
+header .box2 div {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  font-size: 30px;
+}
+
+header .box2 p {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 102, 255, 0.831);
+  left: 20px;
+  top: 20px;
+  border-radius: 10px;
+}
+
+header .box3 {
+  position: relative;
+  top: 440px;
+  left: 200px;
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #80808055;
+  color: black;
+  font-size: 30px;
+}
+
+header .box3 div {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  font-size: 30px;
+}
+
+header .box3 p {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  left: 20px;
+  top: 20px;
+  border-radius: 10px;
+}
+
+header .box4 {
+  position: relative;
+  top: 340px;
+  left: 600px;
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #80808055;
+  color: black;
+  font-size: 30px;
+}
+
+header .box4 div {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  font-size: 30px;
+}
+
+header .box4 p {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 200, 255, 0.831);
+  left: 20px;
+  top: 20px;
+  border-radius: 10px;
+}
+
+header .box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  transform: translateY(-15px);
+}
+
+header .box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  transition: 0.3s ease-in;
+}
+
+header .roate {
+  position: absolute;
+  top: 350px;
+  left: 1200px;
+  width: 400px;
+  height: 400px;
+  background-color: #5300ac;
+  animation: blobMove 3s ease-in-out infinite alternate;
+  border-radius: 50%;
+}
+
+@keyframes blobMove {
+  0%,
+  100% {
+    border-radius: 50% 50% 55% 45% / 60% 50% 50% 40%;
+    transform: rotate(90deg);
+  }
+
+  25% {
+    border-radius: 48% 52% 60% 40% / 58% 52% 48% 42%;
+    transform: rotate(180deg);
+  }
+
+  50% {
+    border-radius: 52% 48% 50% 50% / 62% 48% 46% 44%;
+    transform: rotate(270deg);
+  }
+
+  75% {
+    border-radius: 54% 46% 58% 42% / 60% 55% 45% 40%;
+    transform: rotate(360deg);
+  }
+}
+
+header .roate .raote {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #ff6b6b, orange);
+  border-radius: 50%;
+  top: 100px;
+  left: 100px;
+  animation: blobMove 3s ease-in-out infinite alternate;
+}

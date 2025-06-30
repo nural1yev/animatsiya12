@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+.works {
+  position: relative;
+  top: 1000px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(237, 237, 237);
+}
+
+.works .first {
+  position: absolute;
+  top: 200px;
+  left: 910px;
+  height: 5px;
+  width: 100px;
+  background-color: #5300ac;
+  border-radius: 50px;
+  animation: first 2s infinite alternate;
+}
+
+.works .second {
+  position: absolute;
+  top: 200px;
+  left: 860px;
+  height: 5px;
+  width: 30px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, yellow, orange);
+}
+
+.works .third {
+  position: absolute;
+  top: 200px;
+  left: 1030px;
+  height: 5px;
+  width: 30px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, yellow, orange);
+  animation: third 2s infinite alternate;
+}
+
+@keyframes first {
+  0% {
+    width: 100px;
+    left: 910px;
+  }
+
+  100% {
+    width: 100px;
+    left: 900px;
+    padding: 0px 65px;
+  }
+}
+
+@keyframes third {
+  0% {
+    width: 30px;
+    left: 1030px;
+  }
+
+  100% {
+    width: 30px;
+    left: 1040px;
+  }
+}
+
+.works h1 {
+  font-size: 50px;
+  position: absolute;
+  top: 100px;
+  left: 820px;
+  color: black;
+}
+
+.works .box111 {
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  width: 450px;
+  height: 400px;
+  box-shadow: 0px 0px 10px gray;
+  background-color: white;
+  font-size: 20px;
+  color: gray;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.works .box111 h2 {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+
+.works .box111 span {
+  margin-left: 50px;
+}
+
+.works .box111 p {
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(135deg, #5300ac, #32006a);
+}
+
+.works .box222 {
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  width: 450px;
+  height: 400px;
+  box-shadow: 0px 0px 10px gray;
+  background-color: white;
+  font-size: 20px;
+  color: gray;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.works .box222 h2 {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+
+.works .box222 span {
+  margin-left: 50px;
+}
+
+.works .box222 p {
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(135deg, #5300ac, #32006a);
+}
+
+.works .box333 {
+  position: absolute;
+  top: 300px;
+  left: 1250px;
+  width: 450px;
+  height: 400px;
+  box-shadow: 0px 0px 10px gray;
+  background-color: white;
+  font-size: 20px;
+  color: gray;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.works .box333 h2 {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+
+.works .box333 span {
+  margin-left: 50px;
+}
+
+.works .box333 p {
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(135deg, #5300ac, #32006a);
+}
+
+.works .box111:before,
+.works .box222:before,
+.works .box333:before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 175px;
+  width: 100px;
+  height: 100px;
+  display: none;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.works .box111:hover:before,
+.works .box222:hover:before,
+.works .box333:hover:before {
+  display: block;
+}
+
+.works .box111,
+.works .box222,
+.works .box333 {
+  transition: 0.3s ease;
+}
+
+.works .box111:hover,
+.works .box222:hover,
+.works .box333:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0px 0px 50px gray;
+}
+
+.works .box111::after,
+.works .box222::after,
+.works .box333::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 235px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  animation: after 3s linear infinite;
+}
+
+.works .box111:hover::after,
+.works .box222:hover::after,
+.works .box333:hover::after {
+  display: block;
+}
+
+@keyframes after {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
